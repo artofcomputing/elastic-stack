@@ -1,6 +1,6 @@
-# **INMET**
+# **Elastic Stack**
 
-## Repositório contendo sistema de extração e armazenamento de dados do **INMET**.
+## Repositório contendo os arquivos de configuração do Elastic Stack
 
 <br>
 
@@ -14,14 +14,6 @@ Portanto, caso deseje utilizar o código para fins de produção, é necessário
 ## **Requisitos mínimos:**
 - Minikube: v1.26.1
 - Kubectl: v1.24.4
-
-<br>
-
-## **Links úteis:**
-- [Site INMET](https://portal.inmet.gov.br)
-- [Manuais de API INMET](https://portal.inmet.gov.br/manual/)
-- [Banco de Dados INMET](https://bdmep.inmet.gov.br/)
-- [Dados Históricos INMET](https://portal.inmet.gov.br/dadoshistoricos)
 
 <br>
 
@@ -71,15 +63,15 @@ minikube tunnel
 
 ### 2. Recuperando a senha do usuário elastic:
 ```bash
-kubectl get secret inmet-es-elastic-user -o=jsonpath='{.data.elastic}' | base64 --decode; echo
+kubectl get secret dev-es-elastic-user -o=jsonpath='{.data.elastic}' | base64 --decode; echo
 ```
 
 ### 3. Verificando o IP do cluster Elasticsearch:
 ```bash
-kubectl get service inmet-es-http
+kubectl get service dev-es-http
 ```
 
 ### 4. Verificando o IP do cluster Kibana:
 ```bash
-kubectl get service inmet-kb-http
+kubectl get service dev-kb-http
 ```

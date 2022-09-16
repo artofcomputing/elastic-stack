@@ -2,9 +2,9 @@
 apiVersion: kibana.k8s.elastic.co/v1
 kind: Kibana
 metadata:
-  name: inmet
+  name: dev
 spec:
   version: 8.4.1
   count: 1
   elasticsearchRef:
-    name: inmet
+    name: dev
