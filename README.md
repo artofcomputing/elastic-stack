@@ -1,6 +1,6 @@
 # **Elastic Stack**
 
-## Repositório contendo os arquivos de configuração do Elastic Stack
+Repositório contendo os arquivos de configuração do Elastic Stack para rodar em Kubernetes.
 
 <br>
 
